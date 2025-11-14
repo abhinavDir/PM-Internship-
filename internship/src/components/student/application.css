@@ -1,0 +1,140 @@
+/* Container */
+.my-applications {
+  padding: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+.my-applications h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #111827;
+  letter-spacing: 0.5px;
+}
+
+/* Application List as Rows */
+.application-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Each Row */
+.application-item {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(145deg, #ffffff, #e0f2fe);
+  border-radius: 14px;
+  padding: 20px 25px;
+  box-shadow: 6px 6px 15px rgba(0,0,0,0.08), -6px -6px 15px rgba(255,255,255,0.85);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.application-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.15), -8px -8px 20px rgba(255,255,255,0.85);
+}
+
+/* Row Header */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-header h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-applied { background-color: #f59e0b; }
+.status-approved { background-color: #22c55e; }
+.status-ongoing { background-color: #3b82f6; }
+.status-completed { background-color: #6b7280; }
+
+/* Row Body */
+.card-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.card-body p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #334155;
+}
+
+.card-body a {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.card-body a:hover {
+  text-decoration: underline;
+}
+
+.applied-date {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 6px;
+}
+
+/* Loading / Empty States */
+.loading,
+.no-applications {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 40px;
+  color: #64748b;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .my-applications {
+    padding: 15px;
+  }
+
+  .card-body {
+    grid-template-columns: 1fr; /* stack on mobile */
+    gap: 8px;
+  }
+
+  .card-header h3 {
+    font-size: 1rem;
+  }
+
+  .status-badge {
+    font-size: 0.7rem;
+    padding: 4px 10px;
+  }
+
+  .card-body p {
+    font-size: 0.85rem;
+  }
+
+  .applied-date {
+    font-size: 0.75rem;
+  }
+}

@@ -1,0 +1,31 @@
+/* Full page container */
+.playstore-page {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #000; fallback background */
+}
+
+/* Full-screen clickable image */
+.app-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cover entire page */
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+}
+
+/* Hover effect for 3D feel */
+.app-image:hover {
+  transform: scale(1.01);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+@media(max-width:480px){
+  .playstore-page{
+    height: 100%;
+    width:100%
+  }
+}

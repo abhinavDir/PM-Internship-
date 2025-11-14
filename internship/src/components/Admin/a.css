@@ -1,0 +1,99 @@
+.applications-review {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.applications-review h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.applications-review p {
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* Table styling */
+.applications-review table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.applications-review th,
+.applications-review td {
+  padding: 12px 14px;
+  text-align: left;
+  border: 1px solid #e5e7eb;
+}
+
+.applications-review th {
+  background: #f3f4f6;
+  font-weight: bold;
+  color: #444;
+}
+
+.applications-review tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+.applications-review tr:hover {
+  background: #eef2ff;
+  transition: background 0.2s ease-in-out;
+}
+
+/* Links */
+.applications-review a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.applications-review a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.applications-review button {
+  padding: 6px 12px;
+  margin: 2px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.applications-review button:hover {
+  opacity: 0.9;
+}
+
+.applications-review button:nth-child(1) {
+  background: #16a34a;
+  color: white;
+}
+
+.applications-review button:nth-child(2) {
+  background: #dc2626;
+  color: white;
+}
+
+.applications-review button:nth-child(3),
+.applications-review button:last-child {
+  background: #6b7280;
+  color: white;
+}
+
+.applications-review button:disabled {
+  background: #d1d5db;
+  cursor: not-allowed;
+}

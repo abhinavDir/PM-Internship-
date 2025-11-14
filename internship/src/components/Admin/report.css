@@ -1,0 +1,138 @@
+/* Container */
+.reports-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reports-container h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #1f2937;
+  text-align: center;
+}
+
+.reports-container p {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+/* Table */
+.reports-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.reports-table th,
+.reports-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.reports-table th {
+  background: #f3f4f6;
+  font-weight: bold;
+  color: #374151;
+}
+
+.reports-table tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+.reports-table tr:hover {
+  background: #eef2ff;
+  transition: background 0.2s ease-in-out;
+}
+
+.reports-table td[colspan] {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+}
+
+/* Buttons */
+.reports-table button {
+  padding: 6px 12px;
+  margin: 2px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease-in-out;
+}
+
+.status-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.status-btn:hover {
+  background: #1d4ed8;
+}
+
+.edit-btn {
+  background: #16a34a;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #15803d;
+}
+
+/* Loading text */
+.loading-text {
+  text-align: center;
+  font-size: 16px;
+  color: #6b7280;
+  margin-top: 20px;
+}
+
+/* -----------------------------
+Mobile responsiveness (≤480px)
+----------------------------- */
+@media (max-width: 480px) {
+  .reports-container {
+    padding-top: 85px;
+  }
+
+  .reports-container h2 {
+    font-size: 20px;
+  }
+
+  .reports-container p {
+    font-size: 12px;
+  }
+
+  .reports-table {
+    display: block;       /* Table becomes scrollable */
+    overflow-x: auto;     /* Horizontal scroll */
+    white-space: nowrap;  /* Keep columns in a row */
+  }
+
+  .reports-table th,
+  .reports-table td {
+    padding: 8px 10px;
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .reports-table button {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .reports-table td[colspan] {
+    padding: 15px;
+    font-size: 12px;
+  }
+}

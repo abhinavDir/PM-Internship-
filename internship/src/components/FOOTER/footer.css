@@ -1,0 +1,98 @@
+.footer {
+  background: #0f1a2f;
+  color: #fff;
+  padding: 50px 20px 20px;
+  font-family: 'Arial', sans-serif;
+  perspective: 1000px; /* 3D perspective */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Each section lifted with shadow for 3D effect */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  background: #1b2b4b;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  transform-style: preserve-3d;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for 3D lift */
+.footer-section:hover {
+  transform: translateY(-10px) rotateX(2deg) rotateY(2deg);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.footer-section p,
+.footer-section li a {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+/* Quick links list */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a:hover {
+  color: #ff6600;
+  transform: translateZ(10px);
+  transition: 0.3s;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.2rem;
+  background: #1b2b4b;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px) scale(1.1) rotateX(3deg) rotateY(3deg);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+@media(max-width:480px){
+  .footer{
+    height: 100%;
+    width: 90%;
+  }
+}
